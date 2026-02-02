@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kpn
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kpn
+  template:
+    metadata:
+      labels:
+        app: kpn
+    spec:
+      containers:
+      - name: kpn
+        image: marsur64/kamen_papier_noznice:december2025
+        ports:
+        - containerPort: 80
+
