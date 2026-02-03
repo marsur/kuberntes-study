@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kpn
 spec:
-  replicas: 8
+  replicas: 4
   selector:
     matchLabels:
       app: kpn
