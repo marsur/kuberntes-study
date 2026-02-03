@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: kpn
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: kpn
   ports:
